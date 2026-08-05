@@ -4,10 +4,5 @@ langchain
 langchain-core
 langchain-community
 langchain-google-genai
-langchain-text-splitters
-faiss-cpu
 python-dotenv
 pydantic
-sentence-transformers
-torch
-transformers
