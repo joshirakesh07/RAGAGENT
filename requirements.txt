@@ -1,13 +1,11 @@
-
 fastapi
 uvicorn
 langchain
 langchain-core
 langchain-community
-langchain-google-genai
+langchain-google-genai>=2.0.0
 langchain-text-splitters
-google-generativeai
+google-generativeai>=0.8.5
 faiss-cpu
-pypdf
 python-dotenv
 pydantic
