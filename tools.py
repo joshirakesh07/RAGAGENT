@@ -1,23 +1,13 @@
-
 from langchain_core.tools import tool
-from rag import retriever
-
+from rag import documents
 
 @tool
 def retrieve_internet_context(query: str) -> str:
     """
-    Retrieve relevant context from the Internet History document.
+    Retrieve Internet history context.
     """
 
-    print("\n==============================")
     print("🔧 TOOL CALLED")
     print("Query:", query)
-    print("==============================")
 
-    docs = retriever.invoke(query)
-
-    context = "\n\n".join(doc.page_content for doc in docs)
-
-    print("Retrieved Chunks:", len(docs))
-
-    return context
+    return documents[0].page_content
